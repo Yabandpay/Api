@@ -1,0 +1,17 @@
+{
+    "name": "yabandpay/api",
+    "authors": [
+        {
+            "name": "YaBandPay",
+            "email": "info@yabandmedia.com"
+        }
+    ],
+    "require": {
+        "ext-json":"*"
+    },
+    "autoload": {
+        "psr-4": {
+            "YaBandPay\\Api\\": "src/"
+        }
+    }
+}
