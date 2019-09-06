@@ -2,7 +2,7 @@
     "name": "yabandpayment/api",
     "authors": [
         {
-            "name": "YaBandPayment",
+            "name": "YaBandPay",
             "email": "info@yabandmedia.com"
         }
     ],
@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "YaBandPayment\\Api\\": "src/"
+            "YaBandPay\\Api\\": "src/"
         }
     }
 }
