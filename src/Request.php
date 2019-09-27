@@ -42,13 +42,13 @@ class Request
         if($response === null || $response === false || empty($response) || \json_last_error()){
             throw new RequestErrorException('request response json format error,' . \json_last_error_msg() . '<br/>' . $result);
         }
-        if(!isset($response['status']) || empty($response['status'])){
-            throw new RequestErrorException('post request response error,' . $response['message']);
+        if(!isset($response['status'])){
+            throw new RequestErrorException('post request response error');
         }
-        if(((bool)$response['status']) === self::SUCCESS && isset($response['data']) && !empty($response['data'])){
+        if($response['status'] === self::SUCCESS && isset($response['data']) && !empty($response['data'])){
             return $response['data'];
         }else{
-            throw new RequestErrorException('post request response error,' . $response['message']);
+            throw new RequestErrorException($response['message']);
         }
     }
 
