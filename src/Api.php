@@ -37,6 +37,8 @@ class Api
                 'timeout' => $timeout,
                 'redirect_url' => $redirect_url,
                 'notify_url' => $notify_url,
+                'ideal_email' =>  "info@yabandmedia.com",   //将调起iDeal支付的email固定默认
+                'post_email' =>  "info@yabandmedia.com",   //将调起支付的post_email固定默认
                 'demo' => $demo
             )
         ));

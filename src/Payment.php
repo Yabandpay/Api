@@ -18,6 +18,14 @@ class Payment
 
     const ALIPAY = 'Alipay';
 
+    const IDEAL = 'iDeal';
+
+    const SOFORT_DIGITAL = 'Sofort/Digital';
+
+    const SOFORT_PHYSICAL = 'Sofort/Physical';
+
+    const BANCONTACT = 'Bancontact';
+
     const PAY_NEW = 'new';
 
     const PAY_PENDING = 'pending';
