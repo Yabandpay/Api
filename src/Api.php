@@ -21,7 +21,7 @@ class Api
         $this->request = $request;
     }
 
-    public function payment($pay_method, $order_id, $amount, $currency, $description, $redirect_url, $notify_url, $timeout = 0, $demo = '')
+    public function payment($pay_method, $order_id, $amount, $currency, $description, $redirect_url, $notify_url, $timeout = 0, $demo = '', $email = '')
     {
         $payinfo = $this->request->post(self::paymentsUrl(), array(
             'user' => $this->account->getUser(),
@@ -37,8 +37,8 @@ class Api
                 'timeout' => $timeout,
                 'redirect_url' => $redirect_url,
                 'notify_url' => $notify_url,
-                'ideal_email' =>  "info@yabandmedia.com",   //将调起iDeal支付的email固定默认
-                'post_email' =>  "info@yabandmedia.com",   //将调起支付的post_email固定默认
+                'ideal_email' =>  $email,
+                'post_email' =>  $email,
                 'demo' => $demo
             )
         ));
