@@ -10,6 +10,8 @@ class Payment
 
     const METHOD_ALIPAY_ID = 'yabandpay_alipay';
 
+    const METHOD_UNIONPAY_ID = 'yabandpay_unionpay';
+
     const PAYMENT_WECHAT = 'wechatpay';
 
     const PAYMENT_ALIPAY = 'alipay';
@@ -17,6 +19,8 @@ class Payment
     const WECHAT = 'WeChat Pay';
 
     const ALIPAY = 'Alipay';
+
+    const UNION = 'UnionPay';
 
     const IDEAL = 'iDeal';
 
