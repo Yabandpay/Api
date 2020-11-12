@@ -30,6 +30,10 @@ class Payment
 
     const BANCONTACT = 'Bancontact';
 
+    const VISA = 'Visa';
+
+    const MASTERCARD = 'MasterCard';
+
     const PAY_NEW = 'new';
 
     const PAY_PENDING = 'pending';
