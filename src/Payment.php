@@ -22,6 +22,10 @@ class Payment
 
     const UNION = 'UnionPay';
 
+    const PAYPAL = 'PAYPAL/RECURRING';
+
+    const UNIONPAY = 'UnionPay Card';
+
     const IDEAL = 'iDeal';
 
     const SOFORT_DIGITAL = 'Sofort/Digital';
