@@ -2,7 +2,6 @@
 namespace YaBandPay\Api;
 
 use YaBandPay\Api\Exception\RequestErrorException;
-use function var_export;
 use const JSON_UNESCAPED_SLASHES;
 use const JSON_UNESCAPED_UNICODE;
 

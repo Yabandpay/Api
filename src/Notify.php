@@ -3,7 +3,6 @@ namespace YaBandPay\Api;
 
 use function strlen;
 use function substr;
-use function var_export;
 
 class Notify
 {
