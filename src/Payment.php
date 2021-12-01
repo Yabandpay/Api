@@ -37,6 +37,12 @@ class Payment
     const VISA = 'Visa';
 
     const MASTERCARD = 'MasterCard';
+    
+    const KLARNA = 'SOFORT/DIGITAL';
+
+    const UNIONPAYWAP = 'UnionPayWap';
+
+    const UNIONPAYQUICKPASS = 'UnionPay QuickPass';
 
     const PAY_NEW = 'new';
 
