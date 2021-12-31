@@ -21,7 +21,7 @@ class Api
         $this->request = $request;
     }
 
-    public function payment($pay_method, $order_id, $amount, $currency, $description, $redirect_url, $notify_url, $timeout = 0, $demo = '', $email = '')
+    public function payment($pay_method, $order_id, $amount, $currency, $description, $redirect_url, $notify_url, $timeout = 0, $demo = '', $email = '',$cancel_url = '')
     {
         $payinfo = $this->request->post(self::paymentsUrl(), array(
             'user' => $this->account->getUser(),
@@ -39,7 +39,8 @@ class Api
                 'notify_url' => $notify_url,
                 'ideal_email' =>  $email,
                 'post_email' =>  $email,
-                'demo' => $demo
+                'demo' => $demo,
+                'cancel_url'=>$cancel_url
             )
         ));
         if(isset($payinfo['url']) && !empty($payinfo['url'])){
